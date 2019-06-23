@@ -25,7 +25,7 @@
 
     <h1 id="title"> Survey Form</h1>
     <p id="description"> Patients Biodata Form</p>
-    <form id="survey-form"></form>
+    <form id="survey-form">
       <div>
         <label for="name"  id="name-label"> *Name: </label>
         <input type="text" id="name" placeholder="Enter name..">
@@ -40,7 +40,27 @@
         <label for="number"  id="number-label"> *Number: </label>
         <input type="number" id="number" placeholder="Enter number.." min="0" max="11">
       </div>
-    
+      <div>
+        <input class="button-submit" type="submit" value="Submit" id="submit">
+      </div>
+      <select name="dropdown" id="dropdown" name="dropdown">
+        <option value="a" selected="">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+      </select>
+      <div>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male" name="gender">Male</label><br>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female" name="gender">Female</label><br>
+      </div>
+      <div>
+        <p> Which painkiller do you prefer?</p>
+        <label><input type="checkbox" name="painkiller" value="1">Panadol</label><br>
+        <label><input type="checkbox" name="painkiller" value="2">Ibrufen</label><br>
+        <label><input type="checkbox" name="painkiller" value="3">Diclofenac</label><br>
+      </div>
+      </form>
     
   </body>
 </html>
